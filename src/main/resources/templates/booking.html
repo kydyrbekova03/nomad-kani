@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourism Information Form</title>
+<link rel="stylesheet" href="/src/main/resources/static/booking.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1>Book The Direction</h1>
+    <form id="tourismForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="direction">Direction:</label>
+            <select id="direction" name="direction" required>
+                <option value="" disabled selected>Select your direction</option>
+                <option value="Barskoon Waterfall">Barskoon Waterfall</option>
+                <option value="Alamedin Canyon">Alamedin Canyon</option>
+                <option value="Kel Suu Lake">Kel Suu Lake</option>
+                <option value="Kol-Tor Lake">Kol-Tor Lake</option>
+                <option value="Ratsek Hut">Ratsek Hut</option>
+                <option value="Sary-Chelek Lake">Sary-Chelek Lake</option>
+                <option value="Arstanbap Walnut Forest">Arstanbap Walnut Forest</option>
+                <option value="Alay Valley">Alay Valley</option>
+                <option value="Chunkurchak Ski Base">Chunkurchak Ski Base</option>
+                <option value="Karakol">Karakol</option>
+                <option value="Too Ashuu Ski Base">Too Ashuu Ski Base</option>
+            </select>
+        </div>
+        <div class="form-group" style="display: flex; flex-direction: row-reverse;">
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <select id="countryCode" name="countryCode" required>
+                <option value="+1">United States (+1)</option>
+                <option value="+44">United Kingdom (+44)</option>
+                <option value="+36">Hungary (+36)</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="phoneNumber">WhatsApp Number:</label>
+        </div>
+
+        <div class="form-group">
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="1" required>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<script src="/src/main/resources/js/booking.js"></script>
+
+</body>
+</html>
